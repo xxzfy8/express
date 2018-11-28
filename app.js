@@ -22,6 +22,9 @@ router.get('/', function(req, res, next) {
         title: "Express"
     })
 })
+router.get('/test1', function(req, res, next) {
+    res.send('hello word')
+})
 app.use('/', router);
 app.listen(8086, function() {
     console.log('服务已经启动了，端口是8086')
